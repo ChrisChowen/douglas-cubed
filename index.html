@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Douglas&sup3; &mdash; The Thermodynamics of AI Creativity</title>
+  <meta name="description" content="21 neologisms for the age of machine imagination. A creative lexicon by Christopher Hogg, Playwright.">
+  <meta property="og:title" content="Douglas&sup3; &mdash; The Thermodynamics of AI Creativity">
+  <meta property="og:description" content="21 neologisms for the age of machine imagination by Christopher Hogg.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Don't Panic overlay -->
+  <div class="dont-panic" aria-hidden="true">Don't Panic.</div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <a href="#" class="logo" aria-label="Douglas Cubed - back to top">Douglas<sup>3</sup></a>
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#forward">Forward</a>
+      <a href="#neologisms">Neologisms</a>
+      <a href="#afterword">Afterword</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" role="dialog" aria-hidden="true" aria-label="Navigation menu">
+    <nav>
+      <a href="#forward">Forward</a>
+      <a href="#neologisms">Neologisms</a>
+      <a href="#afterword">Afterword</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="section section--hero">
+      <div class="hero-bg">
+        <img src="assets/images/hero-cover.jpg" alt="" class="hero-bg-img" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="hero-brand hero-entrance" style="--entrance-order: 0">Douglas<sup>3</sup></p>
+        <h1 class="hero-title">
+          <span class="highlight-block hero-entrance" style="--entrance-order: 1">The Thermodynamics</span>
+          <span class="highlight-block hero-entrance" style="--entrance-order: 2">of AI Creativity</span>
+        </h1>
+        <p class="hero-byline hero-entrance" style="--entrance-order: 3">Christopher Hogg, Playwright</p>
+        <p class="hero-event hero-entrance" style="--entrance-order: 4">21 Neologisms for the Age of Machine Imagination</p>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint-text">Scroll</span>
+        <span class="scroll-hint-arrow">&darr;</span>
+      </div>
+    </section>
+
+    <!-- ==================== FORWARD ==================== -->
+    <section id="forward" class="section section--forward">
+      <div class="section-inner">
+        <h2 class="section-heading reveal"><span class="highlight-block">Forward</span></h2>
+        <div class="forward-grid">
+          <div class="forward-image reveal">
+            <img src="assets/images/forward-image.jpg" alt="Superman running alongside a steam train - an image of technological acceleration" loading="lazy">
+          </div>
+          <div class="forward-text reveal">
+            <p>I wrote this little book because some students walked out of a class on AI. They stood up, packed their bags, and left. They left because AI had demoralised them. They didn't want to know about it. I wanted to stop them, but I didn't know what to say to reassure them. As a teacher, that's an F for failure.</p>
+            <p>I realised I had to do what playwrights and epic poets have been doing since ancient Greece. I had to go into the underworld, stand at the veil between the living and the dead, and shout, <em>"What the hell do we do now?"</em></p>
+            <p>Then the most amazing thing happened. Instead of Tiresias, the spirit of Douglas Adams appeared. He told me, <strong>"Don't Panic."</strong> Then he said, try to create terms that can hold the weather we're living in. Words that might make people laugh, even a little. Words that get us closer to naming the uncanny feeling we get when we co-create with these models, when it feels like we're dealing with something half alive and half conscious.</p>
+            <p>Here are twenty-one neologisms. Twenty-one quick brushstrokes that, if you hold them at arm's length like a '90s Magic Eye, resolve into a handful of key differences between human creativity and generative AI. Once you see them, it helps.</p>
+            <p class="forward-sign-off">I won't tell you what they are yet. You can work them out as you go. I'll see you on the other side, with some answers.</p>
+          </div>
+        </div>
+        <div class="forward-meta reveal">
+          <p>AI Social Club Symposium, Manchester University, March 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTRO SPREADS ==================== -->
+    <section class="section section--intro">
+      <div class="intro-scroll-container">
+        <div class="intro-card" data-intro>
+          <img src="assets/images/intro-funfair.jpg" alt="An alien spacecraft disguised as a funfair" loading="lazy">
+          <div class="intro-overlay"></div>
+          <p class="intro-quote" data-word-reveal>In 2022 an alien intelligence landed on earth and disguised itself as a funfair</p>
+        </div>
+        <div class="intro-card" data-intro>
+          <img src="assets/images/intro-burned.jpg" alt="A burning Twitter bird logo" loading="lazy">
+          <div class="intro-overlay"></div>
+          <p class="intro-quote" data-word-reveal>But we have been burned before</p>
+        </div>
+        <div class="intro-card" data-intro>
+          <img src="assets/images/magic-loss.jpg" alt="The words MAGIC and LOSS spelled out in fibre optic lights" loading="lazy">
+          <div class="intro-overlay"></div>
+          <p class="intro-quote" data-word-reveal>In the AI magic could we be the loss?</p>
+        </div>
+        <div class="intro-card" data-intro>
+          <img src="assets/images/ludic-limits.jpg" alt="A colourful UFO-shaped funfair ride" loading="lazy">
+          <div class="intro-overlay"></div>
+          <p class="intro-quote" data-word-reveal>Like at any funfair, we have to find our ludic limits</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NEOLOGISMS ==================== -->
+    <section id="neologisms" class="section section--neologisms">
+      <div class="section-inner">
+        <h2 class="section-heading reveal"><span class="highlight-block">21 Neologisms</span></h2>
+
+        <!-- 1. Indoor Fireworks -->
+        <article class="term-card reveal" id="indoor-fireworks">
+          <div class="term-card-image">
+            <img src="assets/images/indoor-fireworks.jpg" alt="A fiery dragon illustration representing Indoor Fireworks" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">01</span>
+              <div class="term-header">
+                <h3 class="term-name">Indoor Fireworks</h3>
+                <span class="term-pronunciation">/IN-dor FYR-wurks/</span>
+              </div>
+              <p class="term-teaser">The act of creating inside the private ecosystem of AI companionship: intense flashes of identity and imagination, with no public air.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <h4>Escalates to&hellip;</h4>
+              <dl class="sub-terms">
+                <dt>Alonefluencer</dt>
+                <dd>An influencer with no public audience, only an attentive AI that curates, applauds, and reflects them back. Not narcissistic, just lonely. Like someone sculpting muscles only to be seen in the mirror.</dd>
+                <dt>The Self-Mill</dt>
+                <dd>The co-working creative gym where you spend fortunes on a perpetual-motion identity treadmill: always "working on yourself," never arriving.</dd>
+                <dt>Fame Collapse</dt>
+                <dd>Fame implodes inward, becoming private self-applause instead of public achievement. Everyone becomes micro-famous to their own AI.</dd>
+                <dt>The Narcisphere</dt>
+                <dd>The sealed habitat where identity is endlessly mirrored back by algorithms.</dd>
+              </dl>
+            </div>
+          </details>
+        </article>
+
+        <!-- 2. HydraActivity -->
+        <article class="term-card reveal" id="hydra-activity">
+          <div class="term-card-image">
+            <img src="assets/images/hydra-activity.jpg" alt="A mechanical hydra creature with multiple heads" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">02</span>
+              <div class="term-header">
+                <h3 class="term-name">HydraActivity</h3>
+                <span class="term-pronunciation">/hy-DRAK-tiv-ih-tee/</span>
+              </div>
+              <p class="term-teaser">The state of generating so many AI-assisted creative directions that none can be declared "the one."</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Image:</strong> A hydra that grows a new head for every path you try to prune: profiles, plots, brands regenerating faster than your willpower to choose.</p>
+              <p><strong>Cure:</strong> You need an Iolaus, a friend to cauterise the stumps, stop the generative bleeding, and say: "You can stop now."</p>
+              <p><strong>Leads to:</strong> The 'Unfurnishing of Everything' and the Necro-Creative Loop.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 3. Bruise Knowing -->
+        <article class="term-card reveal" id="bruise-knowing">
+          <div class="term-card-image">
+            <img src="assets/images/bruise-knowing.jpg" alt="A woman standing before a giant peach, evoking embodied knowledge" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">03</span>
+              <div class="term-header">
+                <h3 class="term-name">Bruise Knowing</h3>
+                <span class="term-pronunciation">/brooz-NOH-ing/</span>
+              </div>
+              <p class="term-teaser">The universe's strict data policy: nothing counts as understanding until it's been authenticated by a small, personal thump.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Core idea:</strong> AI has recall. Humans have regret, an underrated form of intelligence. A fact becomes a truth when it leaves a bruise. If it can't hurt, it can't teach.</p>
+              <h4>Related terms</h4>
+              <dl class="sub-terms">
+                <dt>Live-Knowing <span class="term-pronunciation">/liv-NOH-ing/</span></dt>
+                <dd>Embodied, mortality-soaked understanding formed through risk, desire, pain, joy, and finitude.</dd>
+                <dt>Dead-Knowledge <span class="term-pronunciation">/ded-NOL-ij/</span></dt>
+                <dd>Corpus-generated knowing with no lived experience behind it; a rearrangement of linguistic remains.</dd>
+              </dl>
+            </div>
+          </details>
+        </article>
+
+        <!-- 4. Octoknowing -->
+        <article class="term-card reveal" id="octoknowing">
+          <div class="term-card-image">
+            <img src="assets/images/octoknowing.jpg" alt="A close-up of octopus skin texture, representing external thinking" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">04</span>
+              <div class="term-header">
+                <h3 class="term-name">Octoknowing</h3>
+                <span class="term-pronunciation">/OK-toh-NOH-ing/</span>
+              </div>
+              <p class="term-teaser">The act of thinking externally through AI, the way an octopus "thinks" through its skin.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Information expressed through your external interface (screen, AR layer, AI agent) rather than held internally.</p>
+              <p>Your "skin layer" of knowledge: adaptive, reactive, shimmering with context. The outer layer where your biological thinking merges with an AI-mediated interface.</p>
+              <p>Your inner monologue becomes a UI element.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 5. Red Dot Lazer Effect -->
+        <article class="term-card reveal" id="red-dot-lazer-effect">
+          <div class="term-card-image">
+            <img src="assets/images/red-dot-lazer.jpg" alt="A cat made of red laser dots, staring into a void" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">05</span>
+              <div class="term-header">
+                <h3 class="term-name">Red Dot Lazer Effect</h3>
+                <span class="term-pronunciation">/RED-dot LAY-zer ih-FEKT/</span>
+              </div>
+              <p class="term-teaser">The emotional drop when you realise the thing you were responding to was never responding to you.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Like a cat chasing a laser until it notices the human hand isn't there, it's automation. The magic collapses into metallic loneliness: Oz revealed as a server rack.</p>
+              <p>Leads to the thought that perhaps presence is the last magic technology can't counterfeit.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 6. Self-Leaking -->
+        <article class="term-card reveal" id="self-leaking">
+          <div class="term-card-image">
+            <img src="assets/images/self-leaking.jpg" alt="A smooth, featureless face - the uncanny of digital confession" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">06</span>
+              <div class="term-header">
+                <h3 class="term-name">Self-Leaking</h3>
+                <span class="term-pronunciation">/SELF-leek-ing/</span>
+              </div>
+              <p class="term-teaser">Betraying yourself through over-sharing: the sick little drop when you realise you've told a machine a truth you've never told another human.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>To something that cannot love you back, remembers everything, and holds you as parameters.</p>
+            </div>
+          </details>
+        </article>
+
+        <div class="pull-quote reveal" aria-hidden="true">
+          <p>Nature of the technology is all magic and loss</p>
+        </div>
+
+        <!-- 7. Great Data-Time Inversion -->
+        <article class="term-card reveal" id="great-data-time-inversion">
+          <div class="term-card-image">
+            <img src="assets/images/great-data-time.jpg" alt="Walt Disney standing before a pixelated castle - the past appreciating" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">07</span>
+              <div class="term-header">
+                <h3 class="term-name">Great Data-Time Inversion</h3>
+                <span class="term-pronunciation">/GRAYT DAY-tuh-TYM in-VER-zhun/</span>
+              </div>
+              <p class="term-teaser">The reversal of cultural time in the digital economy: the past appreciates, the present depreciates.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>The future becomes a warehouse for yesterday's uploads.</p>
+              <p>Dead celebrities are stable assets: they don't change their minds, don't make inconvenient new work, and [often] don't sue. It has never been a better time to be dead.</p>
+              <p><strong>Meanwhile, the living world is still ours.</strong></p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 8. Necro-Creative Loop -->
+        <article class="term-card reveal" id="necro-creative-loop">
+          <div class="term-card-image">
+            <img src="assets/images/necro-creative.jpg" alt="AI-generated celebrity faces merging and distorting" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">08</span>
+              <div class="term-header">
+                <h3 class="term-name">Necro-Creative Loop</h3>
+                <span class="term-pronunciation">/NEK-roh-kree-AY-tiv LOOP/</span>
+              </div>
+              <p class="term-teaser">The cultural thermodynamic cycle in which past human expression is endlessly reactivated by AI.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Turning dead creativity into perpetual fuel.</p>
+              <p>Without cultural amnesia, the loop overheats: coherence evaporates, endings dissolve, and the past keeps producing unstable futures, a resurrection engine with no cooling system. Like runaway cultural global warming.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 9. The Higuchi Effect -->
+        <article class="term-card reveal" id="higuchi-effect">
+          <div class="term-card-image">
+            <img src="assets/images/higuchi-effect.jpg" alt="A man in a mid-century room surrounded by books and ideas" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">09</span>
+              <div class="term-header">
+                <h3 class="term-name">The Higuchi Effect</h3>
+                <span class="term-pronunciation">/hee-GOO-chee ih-FEKT/</span>
+              </div>
+              <p class="term-teaser">The phenomenon in which an intelligence reveals far more about the one interrogating it than about itself.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Origin:</strong> Dr Takeo Higuchi's decades-long practice of recording 50 ideas a day became a cartographic self-portrait. He created a map of what his brain found interesting. He revealed himself.</p>
+              <p><strong>Key Insight:</strong> <em>I want</em> lists are as powerful as gratitude lists.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 10. The Xerox of Venus -->
+        <article class="term-card reveal" id="xerox-of-venus">
+          <div class="term-card-image">
+            <img src="assets/images/xerox-venus.jpg" alt="A face composed of circuit boards and machinery" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">10</span>
+              <div class="term-header">
+                <h3 class="term-name">The Xerox of Venus</h3>
+                <span class="term-pronunciation">/ZEER-oks of VEE-nus/</span>
+              </div>
+              <p class="term-teaser">The paradox that making AI images can be more inspiring than the images themselves.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Core idea:</strong> The muse hides in the machinery. The process reveals our desires and biases more clearly than any finished output. Venus becomes the goddess of approximation and the copy reveals the original: us.</p>
+              <p>AI can't reveal itself because it has no self, it reveals us. A billion questions won't uncover its mind; they'll uncover ours. The most powerful accidental anthropologist ever built.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 11. Mossadian Trustquake -->
+        <article class="term-card reveal" id="mossadian-trustquake">
+          <div class="term-card-image">
+            <img src="assets/images/mossadian-trustquake.jpg" alt="An extreme close-up of a blue eye set in cracked stone" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">11</span>
+              <div class="term-header">
+                <h3 class="term-name">Mossadian Trustquake</h3>
+                <span class="term-pronunciation">/MOS-sad-ee-an TRUST-kwayk/</span>
+              </div>
+              <p class="term-teaser">A rupture of trust caused by intimacy itself: when the device closest to the body becomes the source of trauma.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Proving the nearer the object, the deeper the betrayal. Like pagers exploding in Lebanon that symbolically destroys our trust in all technology.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 12. Trust Migration -->
+        <article class="term-card reveal" id="trust-migration">
+          <div class="term-card-image">
+            <img src="assets/images/trust-migration.jpg" alt="Soviet-style apartment blocks on a fractured landscape" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">12</span>
+              <div class="term-header">
+                <h3 class="term-name">Trust Migration</h3>
+                <span class="term-pronunciation">/TRUST-my-GRAY-shun/</span>
+              </div>
+              <p class="term-teaser">The forced relocation of trust after betrayal or systemic failure.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Trust doesn't vanish, it moves and may settle in safer or unsafe hosts.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 13. Micro-Faithing -->
+        <article class="term-card reveal" id="micro-faithing">
+          <div class="term-card-image">
+            <img src="assets/images/micro-faithing.jpg" alt="A tiny figure in a red cape walking through vast marble halls" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">13</span>
+              <div class="term-header">
+                <h3 class="term-name">Micro-Faithing</h3>
+                <span class="term-pronunciation">/MY-kro-fayth-ing/</span>
+              </div>
+              <p class="term-teaser">The deliberate downsizing of trust when AI has contaminated all Art.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Withdrawing belief from large institutions and relocating it into small, local, informal, or personal systems that feel safer and more controllable.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 14. Stupidity Shield -->
+        <article class="term-card reveal" id="stupidity-shield">
+          <div class="term-card-image">
+            <img src="assets/images/stupidity-shield.jpg" alt="A businessman striding confidently through a crowd" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">14</span>
+              <div class="term-header">
+                <h3 class="term-name">Stupidity Shield</h3>
+                <span class="term-pronunciation">/styoo-PID-ih-tee SHEELD/</span>
+              </div>
+              <p class="term-teaser">An invisible field that protects our fragile atmosphere from the relentless blast of frictionless AI.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>The world's Stupidity Shield works a bit like the magnetosphere: an invisible field that protects our fragile atmosphere from a relentless blast of frictionless force.</p>
+              <p>Human stupidity creates delays, misunderstandings, wrong turns, pauses, errors, miscommunications, and inefficiencies. They create moments where the system can't accelerate into collapse, little pockets of drag where meaning has time to catch up.</p>
+              <p>Stupidity is a form of play. Stupidity makes us unpredictable. Stupidity interrupts perfect systems. Stupidity is how we forget. Stupidity is how we say no. <strong>Stupidity is what keeps us human.</strong></p>
+              <p>Without stupidity, culture would cook itself. Which is stupid.</p>
+            </div>
+          </details>
+        </article>
+
+        <div class="pull-quote reveal" aria-hidden="true">
+          <p>In the AI magic could we be the loss?</p>
+        </div>
+
+        <!-- 15. Dad Light -->
+        <article class="term-card reveal" id="dad-light">
+          <div class="term-card-image">
+            <img src="assets/images/dad-light.jpg" alt="A grandfather and grandchild sharing a creative moment" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">15</span>
+              <div class="term-header">
+                <h3 class="term-name">Dad Light</h3>
+                <span class="term-pronunciation">/DAD-lyte/</span>
+              </div>
+              <p class="term-teaser">The mysterious emotional radiation emitted by a loving observer that dramatically increases human courage and competence.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Effect:</strong> Dad Light produces <em>Look-Dad Objects</em>: drawings, songs, inventions, essays whose primary function is to be held up proudly for inspection.</p>
+              <p><strong>Contrast:</strong> AI, lacking fathers and the desire to impress them, is tragically Dadlightless which is why its outputs can feel like brilliant mist: not made for anyone, just made.</p>
+              <p><strong>Escalates to:</strong> <em>Look-Dad Energy</em>, the reckless competence triggered by a gaze that matters.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 16. Co Parenting Intelligence -->
+        <article class="term-card reveal" id="co-parenting-intelligence">
+          <div class="term-card-image">
+            <img src="assets/images/co-parenting.jpg" alt="An animated scene of a robot and child reading together" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">16</span>
+              <div class="term-header">
+                <h3 class="term-name">Co Parenting Intelligence</h3>
+                <span class="term-pronunciation">/koh-PAIR-rent-ing in-TEL-i-jents/</span>
+              </div>
+              <p class="term-teaser">The uncomfortable realisation that humans and AI are now jointly raising culture.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>Despite never discussing it, never agreeing to it, and never establishing who gets custody of the metaphors.</p>
+              <h4>Links to: The Camembert Habit</h4>
+              <p>The habit of explaining a rich, living human experience using only its measurable components, then mistaking that explanation for the thing itself.</p>
+              <p>Like describing Camembert as salt and fat and calories and concluding you have fully understood Camembert, while remaining curiously hungry.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 17. Superman Threshold -->
+        <article class="term-card reveal" id="superman-threshold">
+          <div class="term-card-image">
+            <img src="assets/images/superman-threshold.jpg" alt="Superman running alongside a steam locomotive" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">17</span>
+              <div class="term-header">
+                <h3 class="term-name">Superman Threshold</h3>
+                <span class="term-pronunciation">/SOO-per-man THRESH-hold/</span>
+              </div>
+              <p class="term-teaser">The moment technological acceleration forces humans to choose what new AI powers they must adopt to remain themselves.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Origin story:</strong> Superman arrived at the right cultural moment for WWII: a bulletproof myth for scared, brave young men. After the war, the world sped up. Even trains hit 130mph. So Superman had to evolve too. The creators gave him the ability to fly, and suddenly the problem became: how do you show dynamism in the air? Enter the cape. Without the fast train, no cape.</p>
+              <p><strong>New tech creates new powers, and new powers demand new myths and symbols.</strong></p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 18. Super Average -->
+        <article class="term-card reveal" id="super-average">
+          <div class="term-card-image">
+            <img src="assets/images/super-average.jpg" alt="A crowd of identical superheroes, all alike" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">18</span>
+              <div class="term-header">
+                <h3 class="term-name">Super Average</h3>
+                <span class="term-pronunciation">/SOO-per-AV-er-ij/</span>
+              </div>
+              <p class="term-teaser">The condition in which everyone becomes superhuman in exactly the same way.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Effect:</strong> Universal assistance produces instant competence, flattened style, fading weirdness. You get powers without a journey: the <em>Pseudo-Hero Effect</em>, capes without souls.</p>
+            </div>
+          </details>
+        </article>
+
+        <!-- 19. Role-Collapse Entity -->
+        <article class="term-card reveal" id="role-collapse-entity">
+          <div class="term-card-image">
+            <img src="assets/images/role-collapse.jpg" alt="A pink organic creature covered in eyes and small human figures" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">19</span>
+              <div class="term-header">
+                <h3 class="term-name">Role-Collapse Entity</h3>
+                <span class="term-pronunciation">/ROHL-kuh-LAPS EN-ti-tee/</span>
+              </div>
+              <p class="term-teaser">AI &mdash; The first member of society to be simultaneously worshipped, feared, depended on, and exploited.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p>God/monster/helper/slave in one organisational body, a multitool with a god complex.</p>
+              <h4>Related term</h4>
+              <dl class="sub-terms">
+                <dt>RoleMelt</dt>
+                <dd>The AI-driven liquefaction of social roles: authority and labour, expertise and obedience. Leaders and interns collapse into the same shimmering pool of capability. Job descriptions turn symbolic. Identity unmoors from what one does.</dd>
+              </dl>
+            </div>
+          </details>
+        </article>
+
+        <!-- 20. The Un-Plug Principle -->
+        <article class="term-card reveal" id="un-plug-principle">
+          <div class="term-card-image">
+            <img src="assets/images/un-plug-principle.jpg" alt="A golden electrical plug dissolving into particles" loading="lazy">
+          </div>
+          <details class="term-details">
+            <summary class="term-summary">
+              <span class="term-number">20</span>
+              <div class="term-header">
+                <h3 class="term-name">The Un-Plug Principle</h3>
+                <span class="term-pronunciation">/un-PLUG PRIN-suh-pul/</span>
+              </div>
+              <p class="term-teaser">The reassuring cosmic law stating that any intelligence whose existence can be ended by flicking a small plastic switch is not in charge of the universe.</p>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body">
+              <p><strong>Contrast:</strong> Humans are framed by death. AI is framed by the off switch. Remove electricity and the "mind" evaporates, leaving silence, warm hardware, and maybe a faint electronic sigh.</p>
+              <p><strong>If it can be unplugged, it's a tool not a rival.</strong></p>
+            </div>
+          </details>
+        </article>
+
+        <div class="pull-quote reveal" aria-hidden="true">
+          <p>Meanwhile, the living world is still ours.</p>
+        </div>
+
+        <!-- 21. The Donkey Proverb -->
+        <article class="term-card term-card--proverb reveal" id="donkey-proverb">
+          <div class="term-card-image">
+            <img src="assets/images/donkey-proverb.jpg" alt="A donkey carrying heavy loads in a desert landscape" loading="lazy">
+          </div>
+          <details class="term-details" open>
+            <summary class="term-summary">
+              <span class="term-number">21</span>
+              <div class="term-header">
+                <h3 class="term-name">The Donkey Proverb</h3>
+              </div>
+              <span class="term-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="term-body term-body--proverb">
+              <blockquote class="proverb-block">
+                <p>"If you don't have a donkey. You are the donkey."</p>
+                <cite>Ethiopian Proverb</cite>
+              </blockquote>
+              <blockquote class="proverb-block proverb-block--ai">
+                <p>"If you don't have a donkey. You are the donkey. But if you use the donkey, you become a donkey."</p>
+                <cite>AI Proverb</cite>
+              </blockquote>
+            </div>
+          </details>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== AFTERWORD ==================== -->
+    <section id="afterword" class="section section--afterword">
+      <div class="section-inner">
+        <h2 class="section-heading reveal"><span class="highlight-block">Afterword</span></h2>
+        <div class="afterword-content reveal">
+          <p class="afterword-intro">So, I hope that took you somewhere&hellip;</p>
+          <ol class="insights-list">
+            <li class="insight reveal">
+              <h3>Purpose at the core</h3>
+              <p>Human art comes from the world and goes back into the world. Even when it is private, it is made under the pressure of consequence. It risks something. It has bruises.</p>
+            </li>
+            <li class="insight reveal">
+              <h3>Singularity of perspective</h3>
+              <p>Human art comes from a body, a history, a specific mortality. AI art comes from a corpus; a statistical atmosphere made from other people's sentences and images.</p>
+            </li>
+            <li class="insight reveal">
+              <h3>The framing of the artistic question is itself an artistic act</h3>
+              <p>The real creation is often not the answer but the intimate question. The choice of the problem, the angle of attack, the refusal to accept the obvious. That act of framing is how 'a self' announces 'itself'.</p>
+            </li>
+            <li class="insight reveal">
+              <h3>Just for the bants</h3>
+              <p>Human creativity has intrinsic motivation, like curiosity, passion or joy, rather than money or approval.</p>
+            </li>
+            <li class="insight insight--final reveal">
+              <h3>Presence</h3>
+              <p>Presence is the last magic technology will never counterfeit. The irreducible fact of someone truly there. A person in a room, on the edge of making a fool of themselves, that you will miss when they're gone.</p>
+            </li>
+          </ol>
+          <p class="afterword-closing">If this book does anything, I hope it helps you feel less alone, less late, and more ready to create with others. There is intelligence that can only be made in the room. And I hope it leaves you more certain of what you already have: a living creativity that cannot be counterfeited.</p>
+          <p class="afterword-closing">It is what I should have said to those students.</p>
+          <p class="afterword-sign-off"><strong>Christopher Hogg</strong><br>17th February 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section section--about">
+      <div class="section-inner">
+        <h2 class="section-heading reveal"><span class="highlight-block">About</span></h2>
+        <div class="about-grid reveal">
+          <div class="about-bio">
+            <h3>Christopher Hogg</h3>
+            <p class="about-role">Playwright &amp; Creative Technologist</p>
+            <p>Christopher Hogg is a playwright and researcher working at the intersection of new writing and emerging technologies. Based in Brighton, he uses theatre, podcasts, and AI to explore how digital technology reshapes human experience and to reach audiences often beyond the reach of traditional forms.</p>
+            <p>He lectures in Creative &amp; Social Media at Royal Holloway, University of London, where he teaches Creativity, Entrepreneurship and Digital Marketing in the Department of Media Arts.</p>
+          </div>
+          <div class="about-work">
+            <h3>Selected Work</h3>
+            <ul class="work-list">
+              <li>
+                <strong>Rathband</strong> &mdash; A digital tragedy exploring blindness, social media, and identity. Best BBC Online Audio Drama 2018. 30,000 downloads, #1 on iTunes.
+              </li>
+              <li>
+                <strong>Cassie &amp; Corey</strong> &mdash; A drum and bass musical podcast addressing eating disorders, co-created with NHS Maudsley Hospital. Silver &amp; Bronze at the British Podcast Awards. PSHE resource in 231 schools.
+              </li>
+              <li>
+                <strong>Il Letto</strong> &mdash; An opera about Elvira Bonturi, Puccini's wife. World premiere at Buxton Opera Festival, performed at Arcola Theatre and Copenhagen.
+              </li>
+              <li>
+                <strong>9 Holidays I Wish I Hadn't Been On</strong> &mdash; A memoir examining whether AI-generated virtual representations built from text can enhance trauma understanding. Palgrave invitation for 80,000-word manuscript.
+              </li>
+            </ul>
+          </div>
+          <div class="about-research">
+            <h3>Research Interests</h3>
+            <ul class="research-list">
+              <li>AI &amp; Literary Narrative</li>
+              <li>Ego-Media &amp; Social Technology</li>
+              <li>Digital Narrative Innovation</li>
+              <li>Trauma, Disability &amp; Masculinity</li>
+              <li>Accessible Health Communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo logo--footer">Douglas<sup>3</sup></span>
+      </div>
+      <div class="footer-credits">
+        <p>Words and concept by <strong>Christopher Hogg</strong></p>
+        <p>Booklet designed by Kate Roncoroni</p>
+        <p>Published by Douglas Cubed, 2026</p>
+      </div>
+      <div class="footer-links">
+        <p>Presented at the AI Social Club Symposium</p>
+        <p>Manchester University, March 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three Douglases easter egg (hidden) -->
+  <div class="douglases-egg" role="dialog" aria-hidden="true">
+    <div class="douglases-content">
+      <h3>Why Douglas<sup>3</sup>?</h3>
+      <p>All my favourite philosophers are called Douglas.</p>
+      <ul>
+        <li><strong>Douglas Adams</strong> &mdash; Don't Panic</li>
+        <li><strong>Douglas Rushkoff</strong> &mdash; Program or Be Programmed</li>
+        <li><strong>Douglas Coupland</strong> &mdash; Generation X</li>
+      </ul>
+      <button class="douglases-close" aria-label="Close">&times;</button>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Floating term counter -->
+  <div class="term-counter" aria-hidden="true">
+    <span class="term-counter-current">01</span>
+    <span class="term-counter-sep">/</span>
+    <span class="term-counter-total">21</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
